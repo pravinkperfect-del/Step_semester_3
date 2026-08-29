@@ -1,4 +1,4 @@
-package main.java.control_flow.class_problems;
+package main.java.Session1_control_flow.class_problems;
 
 import java.util.Scanner;
 

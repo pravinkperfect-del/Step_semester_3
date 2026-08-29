@@ -1,4 +1,4 @@
-package main.java.control_flow.assignment_problems;
+package main.java.Session1_control_flow.assignment_problems;
 
 import java.util.Scanner;
 
