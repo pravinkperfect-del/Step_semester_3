@@ -1,8 +1,8 @@
-package main.java.Session1_control_flow.class_problems;
+package main.java.Session3_control_flow.class_problems;
 
 import java.util.Scanner;
 
-public class PalindromeNumber {
+public class ArmstrongNumber {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -11,20 +11,20 @@ public class PalindromeNumber {
         int number = input.nextInt();
 
         int origNumber = number;
-        int reversedNumber = 0;
+        int sum = 0;
 
         while (number != 0) {
             int digit = number % 10;
 
-            reversedNumber = reversedNumber * 10 + digit;
+            sum = sum + digit * digit * digit;
 
             number = number / 10;
         }
 
-        boolean isPalindrome = reversedNumber == origNumber;
+        boolean isArmstrong = sum == origNumber;
 
         System.out.println("Is the number " + origNumber +
-                " a Palindrome? " + isPalindrome);
+                " an Armstrong number? " + isArmstrong);
 
         input.close();
     }
