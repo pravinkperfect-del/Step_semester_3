@@ -1,0 +1,34 @@
+package main.java.Assignment_problems;
+
+import java.util.*;
+
+class FantasyTeamScoreMultiplier {
+
+    static void applyMultipliers(double[] playerScores, int captainIndex, int viceCaptainIndex) {
+        playerScores[captainIndex] *= 2;
+        playerScores[viceCaptainIndex] *= 1.5;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of players: ");
+        int n = sc.nextInt();
+
+        double[] scores = new double[n];
+
+        System.out.println("Enter scores:");
+        for (int i = 0; i < n; i++)
+            scores[i] = sc.nextDouble();
+
+        System.out.print("Enter captain index: ");
+        int captain = sc.nextInt();
+
+        System.out.print("Enter vice-captain index: ");
+        int viceCaptain = sc.nextInt();
+
+        applyMultipliers(scores, captain, viceCaptain);
+
+        System.out.println("Updated Scores: " + Arrays.toString(scores));
+    }
+}
